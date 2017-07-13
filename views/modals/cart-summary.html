@@ -1,0 +1,22 @@
+<div class="modal-body">
+	<div ng-show="basket.length == 0">
+		Your basket is empty!
+	</div>
+
+	<div ng-hide="basket.length == 0">
+		<label>Your Order : </label>
+		
+		<div ng-repeat="item in basket" class="basket-items">
+			<img src="{{item.url}}" height="50px" width="50px">
+			<span>{{item.itemName}}</span>
+			<span class="pull-right">&#8377;{{item.itemPrice}}</span>
+		</div>
+
+		<hr>
+		
+		<strong>Subtotal :</strong> <span class="pull-right form-group">&#8377;300</span>
+
+		<button class="add-item" ng-click="proceedToCheckout()">Proceed to checkout</button>
+	</div>
+	
+</div>
