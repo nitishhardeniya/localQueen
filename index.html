@@ -4,13 +4,28 @@
         <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 		<link href="assets/css/gallery.css" rel="stylesheet" type="text/css" />
         <link href="assets/css/MaterialIcons.css" rel="stylesheet" type="text/css" />
-        
+        <style type="text/css">
+            .login-container{
+                height: 200px;
+                width: 100%;
+                background-color: #fff;
+                border-radius: 4px;
+            }
+        </style>
 
         <script type="text/javascript" src="scripts/app.js"></script>
 		<script type="text/javascript" src="bootstrap/dist/js/bootstrap.min.js"></script>
     </head>
     
     <body>
-		<p>login here</p>
+		<div class="col-xs-12">
+            <div class="login-container">
+                <label class="col-xs-12">Sign-In</label>
+                <input class="form-control" type="text" name="email" placeholder="Email">
+                <input class="form-control" type="text" name="password" placeholder="Password">
+                <button type="button" class="btn btn-success">Login</button>
+            </div>
+        </div>
     </body>
+    
 </html>
