@@ -249,6 +249,7 @@ button:hover {
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
   background-color: #fff !important;
+  color: #c15f5f !important;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -272,7 +273,7 @@ button:hover {
   font-size: 12px;
   cursor: pointer;
   transition: 200ms;
-  min-height: 250px !important;
+  /*min-height: 250px !important;*/
   padding: 20px;
 }
 
@@ -282,12 +283,12 @@ button:hover {
 }
 
 .item-listing ul li {
-    box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.12), 0px 1px 2px 0px rgba(63,92,97,0.24);
+      box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.12), 0px 1px 2px 0px rgba(63,92,97,0.24);
     list-style: none;
     display: inline-block;
     width: 45%;
-    height: 85px;
-    padding: 20px 0px 0px 20px;
+    height: 60px;
+    padding: 15px 0px 0px 15px;
     margin: 4px;
     text-transform: uppercase;
     font-weight: 600;
