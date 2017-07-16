@@ -1,31 +1,33 @@
+<!DOCTYPE html>
 <html>
-
     <head>
-        <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-		<link href="assets/css/gallery.css" rel="stylesheet" type="text/css" />
-        <link href="assets/css/MaterialIcons.css" rel="stylesheet" type="text/css" />
-        <style type="text/css">
-            .login-container{
-                height: 200px;
-                width: 100%;
-                background-color: #fff;
-                border-radius: 4px;
-            }
-        </style>
-
-        <script type="text/javascript" src="scripts/app.js"></script>
-		<script type="text/javascript" src="bootstrap/dist/js/bootstrap.min.js"></script>
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="assets/css/gallery.css">
+        
     </head>
-    
     <body>
-		<div class="col-xs-12">
-            <div class="login-container">
-                <label class="col-xs-12">Sign-In</label>
-                <input class="form-control" type="text" name="email" placeholder="Email">
-                <input class="form-control" type="text" name="password" placeholder="Password">
-                <button type="button" class="btn btn-success">Login</button>
-            </div>
+      <div class="background">
+          <span class="com-title">GlowRoad</div>
+      </div>
+      <div class="content">
+        <div class="form">
+          <h1>Sign-In</h1>
+          <div class="container">
+            <input placeholder="Email" type="text" name="email" class="username" required />
+            <label for="email"  style="display:none">Email Required</label>
+            <input placeholder="Password" type="password" class="password1" name="password" required/>
+              <label for="password1"  style="display:none">Password Required</label>
+            <button id="login" class="btn login" onclick="javascript:gotoHome()" />Login</button>
+            <button id="login" class="btn login" onclick="location.href = 'home.html'" style="background-color: #6969ff" />Login with facebook</button>
+          </div>
         </div>
+      </div>
     </body>
-    
+
 </html>
+
+<script type="text/javascript">
+    function gotoHome() {   console.log(window);
+       window.location.href = 'home.html';
+    }
+</script>
